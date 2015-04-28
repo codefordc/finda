@@ -19,11 +19,11 @@
     "replace": "^0.2.9",
     "glob": "^3.2.9",
     "mkdirp": "^0.3.5",
-    "copyfiles": "0.0.1"
+    "copyfiles": "0.2.1"
   },
   "scripts": {
     "test": "jshint src && karma start --single-run --browsers PhantomJS",
-    "build": "npm run clean && npm run copy && npm run cssmin && npm run requirejs && npm run processhtml && npm run index",
+    "build": "npm run clean && npm run copy && npm run cssmin && npm run requirejs && npm run index",
     "clean": "rimraf dist",
     "copy": "copyfiles index.html data.geojson config.json *.md styles/properties.css img/* lib/leaflet/images/marker-* dist",
     "cssmin": "cleancss --s1 -o dist/styles/style.css styles/style.css",

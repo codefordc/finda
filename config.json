@@ -1,58 +1,40 @@
 {
   "project": {
-    "name": "Finda",
+    "name": "#BaltimoreLunch",
     "description": "<p>Finda is a generic \"find-a\" app for geographic datasets.</p>",
     "contact": "Please send feedback, ideas, and bug reports to our <a href=\"https://github.com/codeforboston/finda/issues\" target=\"_blank\">Github</a> page."
   },
   "map": {
-    "preview_attribute": "organization_name",
-    "center":[42.3725, -71.1266],
-    "zoom":13,
+    "preview_attribute": "_name",
+    "center":[39.3133, -76.6167],
+    "zoom":12,
     "maxZoom":16,
     "maxBounds":[
-      [39.2, -78.0],
-      [44.5, -65.0]
+      [39.6, -76.95],
+      [39, -76.15]
     ]
   },
   "properties": [
-    "organization_name",
-    "address",
-    {"name": "address", "title": "directions", "directions": true },
-    {"name": "web_url", "title": "website", "url": true },
-    {"name": "contact_names", "title": "Contact Information" },
-    "contact_emails",
-    "phone_numbers",
-
-    {"name": "services_offered", "title": "Services" },
-    {"name": "youth_category", "title": "Type of Organization" },
-    {"name": "target_populations", "title": "Populations Served" },
-
-    {"name": "additional_notes", "title": "Information"}
+    "_name",
+    "_address",
+    {"name": "_address", "title": "directions", "directions": true }
   ],
   "list": [
-    "organization_name",
-    "address"
+    "_name",
+    "_address"
   ],
   "search": {
     "geosearch": true,
     "full_text": {
       "keys": [
-        "address",
-        "organization_name",
-        "community",
-        "youth_category",
-        "service_class_level_2",
-        "additional_notes"]
+        "_address",
+        "_name"]
     }
   },
   "facets": {
-    "target_populations": {
-      "title": "Populations Served",
+    "_time": {
+      "title": "Hours",
       "type": "list"
-    },
-    "youth_category": {
-      "title": "Category",
-      "type": "single"
     }
   },
   "analytics": {
